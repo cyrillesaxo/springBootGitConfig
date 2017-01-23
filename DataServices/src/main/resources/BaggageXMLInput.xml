@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<BagEventPublishMessageNotif xmlns="urn:iata:aidm:common:data:alpha:messages">
+	<Bag>
+		<Passenger xmlns="urn:iata:aidm:common:data:alpha:reusableabies">
+			<PassengerNameRecordLocator>2QRJ70</PassengerNameRecordLocator>
+			<AssignedPerson>
+				<TitleName>Mrs</TitleName>
+				<GivenName>Tilda</GivenName>
+				<MiddleName>Teresa</MiddleName>
+				<SurName>Ustinov</SurName>
+				<BirthDate>1941-05-25</BirthDate>
+				<GenderCode>F</GenderCode>
+			</AssignedPerson>
+		</Passenger>
+		<BagTag xmlns="urn:iata:aidm:common:data:alpha:reusableabies">
+			<TagID>0000000101</TagID>
+		</BagTag>
+		<BagPosition xmlns="urn:iata:aidm:common:data:alpha:reusableabies">
+			<AreaID>SRT</AreaID>
+		</BagPosition>
+		<BagSegment xmlns="urn:iata:aidm:common:data:alpha:reusableabies">
+			<SegmentAilineOperatorCode>BA</SegmentAilineOperatorCode>
+			<SegmentFlightID>BA123</SegmentFlightID>
+			<SegmentScheduledDepartureDate>2016-08-01T06:00:00</SegmentScheduledDepartureDate>
+			<SegmentServiceOffer>
+				<CabinClass>S</CabinClass>
+			</SegmentServiceOffer>
+			<GroundTransport>
+				<CarriageMediumCode>AV</CarriageMediumCode>
+				<GroundTransportID>JWA6M7BHHSNO</GroundTransportID>
+			</GroundTransport>
+			<Aircraft>
+				<RegistrationPrefixCode>G-</RegistrationPrefixCode>
+				<RegistrationID>3TYMR3VWZEZV</RegistrationID>
+			</Aircraft>
+			<SegmentSecurityControl>
+				<ContainerSealed>true</ContainerSealed>
+			</SegmentSecurityControl>
+			<SegmentArrivalFacility>
+				<AirportCode>CDG</AirportCode>
+			</SegmentArrivalFacility>
+			<SegmentDepartureFacility>
+				<AirportCode>LHR</AirportCode>
+				<TerminalID>T1</TerminalID>
+				<TerminalCheckInIdentfier>1.CIBA</TerminalCheckInIdentfier>
+			</SegmentDepartureFacility>
+		</BagSegment>
+		<BaggageActivity xmlns="urn:iata:aidm:common:data:alpha:reusableabies">
+			<ActivitySequenceOrdinal>1</ActivitySequenceOrdinal>
+			<BaggageActivityCode>001</BaggageActivityCode>
+			<ActivityDescriptionText>-</ActivityDescriptionText>
+			<ActivityActualDateTime>2016-09-01T01:00:00</ActivityActualDateTime>
+			<ActivitySecondaryCode>-</ActivitySecondaryCode>
+			<ActivityEarliestDateTime>2016-09-01T01:00:00</ActivityEarliestDateTime>
+			<ActivityLatestDateTime>2016-09-01T01:00:00</ActivityLatestDateTime>
+		</BaggageActivity>
+	</Bag>
+</BagEventPublishMessageNotif>

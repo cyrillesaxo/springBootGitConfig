@@ -1,0 +1,134 @@
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:camel="http://camel.apache.org/schema/spring"
+	xmlns:context="http://www.springframework.org/schema/context" xmlns:cassandra="http://www.springframework.org/schema/data/cassandra"
+	xsi:schemaLocation=" http://www.springframework.org/schema/beans    http://www.springframework.org/schema/beans/spring-beans.xsd 
+       						http://www.springframework.org/schema/context  http://www.springframework.org/schema/context/spring-context.xsd 
+       						http://camel.apache.org/schema/spring 		   http://camel.apache.org/schema/spring/camel-spring.xsd">
+
+	<context:property-placeholder location="classpath:myapp.properties" ignore-resource-not-found="true" />
+
+	<bean id="cassandraProducer" class="aero.sita.IATABaggageXML.CassandraProducer" />
+	<bean id="kafkaProducerBean" class="aero.sita.IATABaggageXML.KafkaProduerBean" />
+	<bean id="bagPublishNotifFactory" class="aero.sita.model.BagPublishNotifFactory" />
+	<bean id="jaxbToBagMqtt" class="aero.sita.model.mapper.BagPublishNotifBagMqttMapper" />
+	<bean id="bpmbmsToBagEvent" class="aero.sita.baggage.bim.parser.Parser" />
+	<bean id="bagEventToBagMqtt" class="aero.sita.model.mapper.BagMqttEventBagMapper" />
+	<bean id="bagMqtt" class="aero.sita.cassandra.persistence.BagMqttPersistence" />
+
+
+
+	<!-- activemq beans START -->
+<!-- 	<bean id="jmsConnectionFactory" class="org.apache.activemq.ActiveMQConnectionFactory">
+		<property name="brokerURL" value="vm://localhost?broker.persistent=true" />
+		<property name="brokerURL" value="tcp://192.168.203.143:61616" />
+		<property name="brokerURL" value="tcp://localhost:61616" />
+	</bean> -->
+
+<!-- 	<bean id="pooledConnectionFactory" class="org.apache.activemq.pool.PooledConnectionFactory" init-method="start" destroy-method="stop">
+		<property name="maxConnections" value="8" />
+		<property name="connectionFactory" ref="jmsConnectionFactory" />
+	</bean>
+
+	<bean id="jmsTemplate" class="org.springframework.jms.core.JmsTemplate">
+		<property name="connectionFactory" ref="pooledConnectionFactory" />
+	</bean> -->
+	<!-- activemq beans END -->
+
+
+	<bean name="logFormatter" class="aero.sita.tools.LogExchangeFormatter" scope="prototype" />
+
+	<camelContext id="camel" xmlns="http://camel.apache.org/schema/spring">
+		<dataFormats>
+			<jaxb id="myJaxb" prettyPrint="true" contextPath="aero.sita.generated.BagPublishNotif" />
+		</dataFormats>
+
+		<!-- Getting events messages from vert.x event bus -->
+		<route id="inBound">
+			<from uri="direct:inMQQTClient" />
+			<to uri="direct:inEventBus" />
+		</route>
+
+		<!-- Sending events messages to vert.x event bus -->
+		<route id="outBound">
+			<from uri="direct:outEventBus" />
+			<to uri="direct:outMQQTClient" />
+		</route>
+
+
+		<!-- <route> <from uri="timer:foo?period=30s" /> <transform> <simple> {'name':'cyrille eloundou', 'tile':'contractor'}</simple> </transform> 
+			<to uri="activemq:queue:MQTTClient_in" /> </route> -->
+
+
+
+		<!-- <route> <from uri="direct:start"/> <marshal> <jaxb prettyPrint="false" contextPath="aero.sita.generated" partClass="aero.sita.generated.Contactlist" 
+			fragment="true" /> </marshal> <to uri="mock:result"/> </route> -->
+
+		<route>
+		<!-- <from uri="mqtt:iot?host=ssl://13.95.92.5:8883&amp;subscribeTopicName=RPI/#" id="service_endpoint" />  -->
+			<from uri="activemq:queue:MQTTClient_in" />
+<!-- 			<from uri="mqtt:iot?host=ssl://13.95.92.5:8883&amp;subscribeTopicName=RPI/#&amp;userName=admin&amp;password=admin" id="service_endpoint" /> 
+			<from uri="mqtt:iot?host=tcp://13.95.92.5:8883&amp;subscribeTopicName=RPI/#" id="service_endpoint" /> 
+			<wireTap uri="seda:test" />
+			<log message="Route message from in queue to out queue with data ${body}" />
+			<from uri="mqtt:bar?subscribeTopicName=saxo.mqtt.topic" />
+			<from uri="mqtt:iot?host=tcp://ec2-54-224-102-21.compute-1.amazonaws.com:1883&amp;subscribeTopicName=bds.location.bds_test_id&amp;userName=admin&amp;password=admin" 
+				id="locationService_endpoint" /> <from uri="kafka:localhost:9092?topic=test%26groupId=testing%26autoOffsetReset=earliest%26consumersCount=1" 
+				/>
+
+			<unmarshal ref="myJaxb"/>  -->
+
+			<unmarshal>
+				<jaxb prettyPrint="false" contextPath="aero.sita.generated" partClass="aero.sita.generated.BagPublishNotif" />
+			</unmarshal>
+
+			<!-- <wireTap uri="seda:elasticsearchIn" /> -->
+			<to uri="bean:jaxbToBagMqtt?method=getBagMqtt" />
+
+			<to uri="bean:bagMqtt?method=insertBagMqtt" />
+
+		</route>
+
+
+		<route>
+			<from uri="activemq:queue:MQTTClient_BSM_BPM" />
+			<log message="Route message from in queue to out queue with data ${body}" />
+
+			<to uri="bean:bagEventToBagMqtt?method=toString" />
+			<to uri="bean:bpmbmsToBagEvent?method=getBagEvent" />
+			<to uri="bean:bagEventToBagMqtt?method=bagEventToBagMqtt" />
+
+			<to uri="bean:bagMqtt?method=insertBagMqtt" />
+		</route>
+		
+		
+		<!-- <route> <from uri="seda:elasticsearchIn" /> <to uri="elasticsearch://baggagexmlnode-indexer?operation=BULK_INDEX%26ip=127.0.0.1%26port=9300" 
+			/> </route> -->
+
+		<!-- <route id="cassandraInsert"> <to uri="cassandra:cassandraConnection?keyspace=BaggageXMLNode%26table=Msg%26operation=insert" /> -->
+
+
+<!-- 		 <route>	  
+ 			<from uri="mqtt:iot?host=ssl://13.95.92.5:8883&amp;subscribeTopicNames=/SITA/#" id="locationService_endpoint2" />
+				<setBody>
+		 		<simple> ############# MQTT READ LOG : ${body}  :</simple>
+		 		</setBody>
+				<to uri="stream:out" />		
+		</route>	 -->
+    	   	
+
+		 <route>
+		 	<from uri="seda:test"/>
+		 	<setBody>
+		 		<simple>  debug: ${body}  :debug</simple>
+		 	</setBody>
+		 	<to uri="stream:out" />
+		 </route>
+
+<!-- 		<route> <from uri="kafka:localhost:9092?topic=test" /> <setBody> <simple> &lt;xml&gt;oko&lt;/xml&gt;</simple> <simple> ...go...</simple> 
+			</setBody> <to uri="stream:out" /> </route> -->
+
+
+		<route> <from uri="activemq:queue:MQTTClient_out" /> <log message="Print the message from out to console"/> <to uri="bean:kafkaProducerBean?method=sendMessage"/> 
+			<to uri="stream:out" /> </route>
+
+	</camelContext>
+</beans>

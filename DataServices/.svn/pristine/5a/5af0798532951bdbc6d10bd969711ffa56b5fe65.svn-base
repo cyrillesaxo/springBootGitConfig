@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BagEventPublishMessageNotif>
+  <Bag>
+    <Crew>
+      <AirlineCode ListAgencyID="???" ListAgencyName="str1234" ListSchemeURI="http://www.xsd2xml.com" ListURI="http://www.xsd2xml.com" ListVersionID="???" ListID="???" ListName="str1234" Name="str1234">str1234</AirlineCode>
+      <AllianceCode ListAgencyID="???" ListAgencyName="str1234" ListSchemeURI="http://www.xsd2xml.com" ListURI="http://www.xsd2xml.com" ListVersionID="???" ListID="???" ListName="str1234" Name="str1234">str1234</AllianceCode>
+      <AgentCode ListAgencyID="???" ListAgencyName="str1234" ListSchemeURI="http://www.xsd2xml.com" ListURI="http://www.xsd2xml.com" ListVersionID="???" ListID="???" ListName="str1234" Name="str1234">str1234</AgentCode>
+      <AirportCode ListAgencyID="???" ListAgencyName="str1234" ListSchemeURI="http://www.xsd2xml.com" ListURI="http://www.xsd2xml.com" ListVersionID="???" ListID="???" ListName="str1234" Name="str1234">???</AirportCode>
+      <AssignedOrganisation>
+        <CorporateName LanguageCode="str1234" LanguageID="str1234" LanguageLocaleID="str1234">???</CorporateName>
+        <GroupName LanguageCode="str1234" LanguageID="str1234" LanguageLocaleID="str1234">???</GroupName>
+      </AssignedOrganisation>
+      <AssignedPerson>
+        <AutographID SchemeAgencyID="???" SchemeDataURI="http://www.xsd2xml.com" SchemeURI="http://www.xsd2xml.com" SchemeVersionID="???" SchemeID="???" SchemeName="str1234">???</AutographID>
+        <BirthDate>2012-12-13T12:12:12</BirthDate>
+        <GenderCode ListAgencyID="???" ListAgencyName="str1234" ListSchemeURI="http://www.xsd2xml.com" ListURI="http://www.xsd2xml.com" ListVersionID="???" ListID="???" ListName="str1234" Name="str1234">str1234</GenderCode>
+        <GivenName LanguageCode="str1234" LanguageID="???" LanguageLocaleID="???">???</GivenName>
+        <MiddleName LanguageCode="str1234" LanguageID="str1234" LanguageLocaleID="str1234">???</MiddleName>
+        <SuffixName LanguageCode="str1234" LanguageID="str1234" LanguageLocaleID="str1234">???</SuffixName>
+        <SurName LanguageCode="str1234" LanguageID="str1234" LanguageLocaleID="str1234">???</SurName>
+        <TitleName LanguageCode="str1234" LanguageID="str1234" LanguageLocaleID="str1234">???</TitleName>
+      </AssignedPerson>
+    </Crew>
+    <BagGeopoliticalLocation>
+      <CountryCode ListAgencyID="???" ListAgencyName="str1234" ListSchemeURI="http://www.xsd2xml.com" ListURI="http://www.xsd2xml.com" ListVersionID="???" ListID="???" ListName="str1234" Name="str1234">str1234</CountryCode>
+      <DestinationCode ListAgencyID="???" ListAgencyName="str1234" ListSchemeURI="http://www.xsd2xml.com" ListURI="http://www.xsd2xml.com" ListVersionID="???" ListID="???" ListName="str1234" Name="str1234">str1234</DestinationCode>
+      <RegionCode ListAgencyID="???" ListAgencyName="str1234" ListSchemeURI="http://www.xsd2xml.com" ListURI="http://www.xsd2xml.com" ListVersionID="???" ListID="???" ListName="str1234" Name="str1234">str1234</RegionCode>
+    </BagGeopoliticalLocation>
+    <BagDimension>
+      <Height UnitCodeListVersionID="???" UnitCode="???">123.45</Height>
+      <Length UnitCodeListVersionID="???" UnitCode="???">123.45</Length>
+      <Width UnitCodeListVersionID="???" UnitCode="???">123.45</Width>
+    </BagDimension>
+    <BagProperty>
+      <BasicCode ListAgencyID="???" ListAgencyName="str1234" ListSchemeURI="http://www.xsd2xml.com" ListURI="http://www.xsd2xml.com" ListVersionID="???" ListID="???" ListName="str1234" Name="str1234">str1234</BasicCode>
+      <ColorCode ListAgencyID="???" ListAgencyName="str1234" ListSchemeURI="http://www.xsd2xml.com" ListURI="http://www.xsd2xml.com" ListVersionID="???" ListID="???" ListName="str1234" Name="str1234">str1234</ColorCode>
+      <DescriptiveCode ListAgencyID="???" ListAgencyName="str1234" ListSchemeURI="http://www.xsd2xml.com" ListURI="http://www.xsd2xml.com" ListVersionID="???" ListID="???" ListName="str1234" Name="str1234">str1234</DescriptiveCode>
+      <DescriptivePicture CharacterSetCode="???" MIMECode="???">http://www.xsd2xml.com</DescriptivePicture>
+      <ExternalFeatureCode ListAgencyID="???" ListAgencyName="str1234" ListSchemeURI="http://www.xsd2xml.com" ListURI="http://www.xsd2xml.com" ListVersionID="???" ListID="???" ListName="str1234" Name="str1234">str1234</ExternalFeatureCode>
+      <MaterialCode ListAgencyID="???" ListAgencyName="str1234" ListSchemeURI="http://www.xsd2xml.com" ListURI="http://www.xsd2xml.com" ListVersionID="???" ListID="???" ListName="str1234" Name="str1234">str1234</MaterialCode>
+      <WeightMeasure UnitCodeListVersionID="???" UnitCode="???">123.45</WeightMeasure>
+    </BagProperty>
+    <Passenger>
+      <PassengerNameRecordLocator LanguageCode="str1234" SchemeAgencyID="???" SchemeDataURI="http://www.xsd2xml.com" SchemeURI="http://www.xsd2xml.com" SchemeVersionID="???" SchemeID="???" SchemeName="str1234">???</PassengerNameRecordLocator>
+      <AssignedOrganization>
+        <CorporateName LanguageCode="str1234" LanguageID="str1234" LanguageLocaleID="str1234">???</CorporateName>
+        <GroupName LanguageCode="str1234" LanguageID="str1234" LanguageLocaleID="str1234">???</GroupName>
+      </AssignedOrganization>
+      <AssignedPerson>
+        <AutographID SchemeAgencyID="???" SchemeDataURI="http://www.xsd2xml.com" SchemeURI="http://www.xsd2xml.com" SchemeVersionID="???" SchemeID="???" SchemeName="str1234">???</AutographID>
+        <BirthDate>2012-12-13T12:12:12</BirthDate>
+        <GenderCode ListAgencyID="???" ListAgencyName="str1234" ListSchemeURI="http://www.xsd2xml.com" ListURI="http://www.xsd2xml.com" ListVersionID="???" ListID="???" ListName="str1234" Name="str1234">str1234</GenderCode>
+        <GivenName LanguageCode="str1234" LanguageID="???" LanguageLocaleID="???">???</GivenName>
+        <MiddleName LanguageCode="str1234" LanguageID="str1234" LanguageLocaleID="str1234">???</MiddleName>
+        <SuffixName LanguageCode="str1234" LanguageID="str1234" LanguageLocaleID="str1234">???</SuffixName>
+        <SurName LanguageCode="str1234" LanguageID="str1234" LanguageLocaleID="str1234">???</SurName>
+        <TitleName LanguageCode="str1234" LanguageID="str1234" LanguageLocaleID="str1234">???</TitleName>
+      </AssignedPerson>
+    </Passenger>
+    <BagPosition>
+      <AreaID SchemeAgencyID="???" SchemeDataURI="http://www.xsd2xml.com" SchemeURI="http://www.xsd2xml.com" SchemeVersionID="???" SchemeID="???" SchemeName="str1234">???</AreaID>
+      <LineID SchemeAgencyID="???" SchemeDataURI="http://www.xsd2xml.com" SchemeURI="http://www.xsd2xml.com" SchemeVersionID="???" SchemeID="???" SchemeName="str1234">???</LineID>
+      <PointElevationNumber>123.45</PointElevationNumber>
+      <PointID SchemeAgencyID="???" SchemeDataURI="http://www.xsd2xml.com" SchemeURI="http://www.xsd2xml.com" SchemeVersionID="???" SchemeID="???" SchemeName="str1234">???</PointID>
+      <PointLatitudeNumber>123.45</PointLatitudeNumber>
+      <PointLongitudeNumber>123.45</PointLongitudeNumber>
+      <VolumeID>123.45</VolumeID>
+    </BagPosition>
+    <BagTag>
+      <TagExpediteIndicator>true</TagExpediteIndicator>
+      <TagFallbackIndicator>true</TagFallbackIndicator>
+      <TagID SchemeAgencyID="???" SchemeDataURI="http://www.xsd2xml.com" SchemeURI="http://www.xsd2xml.com" SchemeVersionID="???" SchemeID="???" SchemeName="str1234">???</TagID>
+      <TagInterlineIndicator>true</TagInterlineIndicator>
+      <TagPrinter>
+        <DeviceID SchemeAgencyID="???" SchemeDataURI="http://www.xsd2xml.com" SchemeURI="http://www.xsd2xml.com" SchemeVersionID="???" SchemeID="???" SchemeName="str1234">???</DeviceID>
+      </TagPrinter>
+      <TagIssuer>
+        <AirlineCode ListAgencyID="???" ListAgencyName="str1234" ListSchemeURI="http://www.xsd2xml.com" ListURI="http://www.xsd2xml.com" ListVersionID="???" ListID="???" ListName="str1234" Name="str1234">str1234</AirlineCode>
+        <AllianceCode ListAgencyID="???" ListAgencyName="str1234" ListSchemeURI="http://www.xsd2xml.com" ListURI="http://www.xsd2xml.com" ListVersionID="???" ListID="???" ListName="str1234" Name="str1234">str1234</AllianceCode>
+      </TagIssuer>
+      <TagScanner>
+        <DeviceID SchemeAgencyID="???" SchemeDataURI="http://www.xsd2xml.com" SchemeURI="http://www.xsd2xml.com" SchemeVersionID="???" SchemeID="???" SchemeName="str1234">???</DeviceID>
+      </TagScanner>
+    </BagTag>
+    <BagSegment>
+      <SegmentAilineOperatorCode ListAgencyID="???" ListAgencyName="str1234" ListSchemeURI="http://www.xsd2xml.com" ListURI="http://www.xsd2xml.com" ListVersionID="???" ListID="???" ListName="str1234" Name="str1234">str1234</SegmentAilineOperatorCode>
+      <SegmentFlightID SchemeAgencyID="???" SchemeDataURI="http://www.xsd2xml.com" SchemeURI="http://www.xsd2xml.com" SchemeVersionID="???" SchemeID="???" SchemeName="str1234">???</SegmentFlightID>
+      <SegmentScheduledArrivalDate TimeZoneCode="???">2012-12-13T12:12:12</SegmentScheduledArrivalDate>
+      <SegmentScheduledDepartureDate TimeZoneCode="???">2012-12-13T12:12:12</SegmentScheduledDepartureDate>
+      <SegmentSequenceOrdinal>1234</SegmentSequenceOrdinal>
+      <Aircraft>
+        <AircraftTypeCode ListAgencyID="???" ListAgencyName="str1234" ListSchemeURI="http://www.xsd2xml.com" ListURI="http://www.xsd2xml.com" ListVersionID="???" ListID="???" ListName="str1234" Name="str1234">str1234</AircraftTypeCode>
+        <CompartmentID SchemeAgencyID="???" SchemeDataURI="http://www.xsd2xml.com" SchemeURI="http://www.xsd2xml.com" SchemeVersionID="???" SchemeID="???" SchemeName="str1234">???</CompartmentID>
+        <RegistrationID SchemeAgencyID="???" SchemeDataURI="http://www.xsd2xml.com" SchemeURI="http://www.xsd2xml.com" SchemeVersionID="???" SchemeID="???" SchemeName="str1234">???</RegistrationID>
+        <RegistrationPrefixCode ListAgencyID="???" ListAgencyName="str1234" ListSchemeURI="http://www.xsd2xml.com" ListURI="http://www.xsd2xml.com" ListVersionID="???" ListID="???" ListName="str1234" Name="str1234">str1234</RegistrationPrefixCode>
+        <WakeCategoryCode ListAgencyID="???" ListAgencyName="str1234" ListSchemeURI="http://www.xsd2xml.com" ListURI="http://www.xsd2xml.com" ListVersionID="???" ListID="???" ListName="str1234" Name="str1234">str1234</WakeCategoryCode>
+      </Aircraft>
+      <DepartureAirport>
+        <AircraftStandID SchemeAgencyID="???" SchemeDataURI="http://www.xsd2xml.com" SchemeURI="http://www.xsd2xml.com" SchemeVersionID="???" SchemeID="???" SchemeName="str1234">???</AircraftStandID>
+        <AirportCode ListAgencyID="???" ListAgencyName="str1234" ListSchemeURI="http://www.xsd2xml.com" ListURI="http://www.xsd2xml.com" ListVersionID="???" ListID="???" ListName="str1234" Name="str1234">str1234</AirportCode>
+        <HandlingBayID SchemeAgencyID="???" SchemeDataURI="http://www.xsd2xml.com" SchemeURI="http://www.xsd2xml.com" SchemeVersionID="???" SchemeID="???" SchemeName="str1234">???</HandlingBayID>
+        <TerminalCheckInIdentfier SchemeAgencyID="???" SchemeDataURI="http://www.xsd2xml.com" SchemeURI="http://www.xsd2xml.com" SchemeVersionID="???" SchemeID="???" SchemeName="str1234">???</TerminalCheckInIdentfier>
+        <TerminalClaimID SchemeAgencyID="???" SchemeDataURI="http://www.xsd2xml.com" SchemeURI="http://www.xsd2xml.com" SchemeVersionID="???" SchemeID="???" SchemeName="str1234">???</TerminalClaimID>
+        <TerminalGateID SchemeAgencyID="???" SchemeDataURI="http://www.xsd2xml.com" SchemeURI="http://www.xsd2xml.com" SchemeVersionID="???" SchemeID="???" SchemeName="str1234">???</TerminalGateID>
+        <TerminalID SchemeAgencyID="???" SchemeDataURI="http://www.xsd2xml.com" SchemeURI="http://www.xsd2xml.com" SchemeVersionID="???" SchemeID="???" SchemeName="str1234">???</TerminalID>
+        <TerminalPierID SchemeAgencyID="???" SchemeDataURI="http://www.xsd2xml.com" SchemeURI="http://www.xsd2xml.com" SchemeVersionID="???" SchemeID="???" SchemeName="str1234">???</TerminalPierID>
+        <TerminalSatelightID SchemeAgencyID="???" SchemeDataURI="http://www.xsd2xml.com" SchemeURI="http://www.xsd2xml.com" SchemeVersionID="???" SchemeID="???" SchemeName="str1234">???</TerminalSatelightID>
+      </DepartureAirport>
+      <ArrivalAirport>
+        <AircraftStandID SchemeAgencyID="???" SchemeDataURI="http://www.xsd2xml.com" SchemeURI="http://www.xsd2xml.com" SchemeVersionID="???" SchemeID="???" SchemeName="str1234">???</AircraftStandID>
+        <AirportCode ListAgencyID="???" ListAgencyName="str1234" ListSchemeURI="http://www.xsd2xml.com" ListURI="http://www.xsd2xml.com" ListVersionID="???" ListID="???" ListName="str1234" Name="str1234">str1234</AirportCode>
+        <HandlingBayID SchemeAgencyID="???" SchemeDataURI="http://www.xsd2xml.com" SchemeURI="http://www.xsd2xml.com" SchemeVersionID="???" SchemeID="???" SchemeName="str1234">???</HandlingBayID>
+        <TerminalCheckInIdentfier SchemeAgencyID="???" SchemeDataURI="http://www.xsd2xml.com" SchemeURI="http://www.xsd2xml.com" SchemeVersionID="???" SchemeID="???" SchemeName="str1234">???</TerminalCheckInIdentfier>
+        <TerminalClaimID SchemeAgencyID="???" SchemeDataURI="http://www.xsd2xml.com" SchemeURI="http://www.xsd2xml.com" SchemeVersionID="???" SchemeID="???" SchemeName="str1234">???</TerminalClaimID>
+        <TerminalGateID SchemeAgencyID="???" SchemeDataURI="http://www.xsd2xml.com" SchemeURI="http://www.xsd2xml.com" SchemeVersionID="???" SchemeID="???" SchemeName="str1234">???</TerminalGateID>
+        <TerminalID SchemeAgencyID="???" SchemeDataURI="http://www.xsd2xml.com" SchemeURI="http://www.xsd2xml.com" SchemeVersionID="???" SchemeID="???" SchemeName="str1234">???</TerminalID>
+        <TerminalPierID SchemeAgencyID="???" SchemeDataURI="http://www.xsd2xml.com" SchemeURI="http://www.xsd2xml.com" SchemeVersionID="???" SchemeID="???" SchemeName="str1234">???</TerminalPierID>
+        <TerminalSatelightID SchemeAgencyID="???" SchemeDataURI="http://www.xsd2xml.com" SchemeURI="http://www.xsd2xml.com" SchemeVersionID="???" SchemeID="???" SchemeName="str1234">???</TerminalSatelightID>
+      </ArrivalAirport>
+      <OutboundProcess>
+        <BaggageProcessCode ListAgencyID="???" ListAgencyName="str1234" ListSchemeURI="http://www.xsd2xml.com" ListURI="http://www.xsd2xml.com" ListVersionID="???" ListID="???" ListName="str1234" Name="str1234">str1234</BaggageProcessCode>
+      </OutboundProcess>
+      <GroundTransport>
+        <CarriageMediumCode ListAgencyID="???" ListAgencyName="str1234" ListSchemeURI="http://www.xsd2xml.com" ListURI="http://www.xsd2xml.com" ListVersionID="???" ListID="???" ListName="str1234" Name="str1234">str1234</CarriageMediumCode>
+        <GroundTransportID SchemeAgencyID="???" SchemeDataURI="http://www.xsd2xml.com" SchemeURI="http://www.xsd2xml.com" SchemeVersionID="???" SchemeID="???" SchemeName="str1234">???</GroundTransportID>
+      </GroundTransport>
+      <ServiceOffer>
+        <CabinClass SchemeAgencyID="???" SchemeDataURI="http://www.xsd2xml.com" SchemeURI="http://www.xsd2xml.com" SchemeVersionID="???" SchemeID="???" SchemeName="str1234">???</CabinClass>
+        <Seat SchemeAgencyID="???" SchemeDataURI="http://www.xsd2xml.com" SchemeURI="http://www.xsd2xml.com" SchemeVersionID="???" SchemeID="???" SchemeName="str1234">???</Seat>
+      </ServiceOffer>
+      <SecurityControl>
+        <AuthorityToLoad>true</AuthorityToLoad>
+        <AuthorityToTransport>true</AuthorityToTransport>
+        <ContainerSealed>true</ContainerSealed>
+        <ScreeningInstructionCode ListAgencyID="???" ListAgencyName="str1234" ListSchemeURI="http://www.xsd2xml.com" ListURI="http://www.xsd2xml.com" ListVersionID="???" ListID="???" ListName="str1234" Name="str1234">str1234</ScreeningInstructionCode>
+        <SecurityNumber>123.45</SecurityNumber>
+        <SequenceNumber>123.45</SequenceNumber>
+        <TagActiveIndicator>true</TagActiveIndicator>
+      </SecurityControl>
+      <Exception>
+        <ExceptionCode ListAgencyID="???" ListAgencyName="str1234" ListSchemeURI="http://www.xsd2xml.com" ListURI="http://www.xsd2xml.com" ListVersionID="???" ListID="???" ListName="str1234" Name="str1234">str1234</ExceptionCode>
+      </Exception>
+      <InboundProcess>
+        <BaggageProcessCode ListAgencyID="???" ListAgencyName="str1234" ListSchemeURI="http://www.xsd2xml.com" ListURI="http://www.xsd2xml.com" ListVersionID="???" ListID="???" ListName="str1234" Name="str1234">str1234</BaggageProcessCode>
+      </InboundProcess>
+    </BagSegment>
+    <BagException>
+      <ExceptionCode ListAgencyID="???" ListAgencyName="str1234" ListSchemeURI="http://www.xsd2xml.com" ListURI="http://www.xsd2xml.com" ListVersionID="???" ListID="???" ListName="str1234" Name="str1234">str1234</ExceptionCode>
+    </BagException>
+    <BaggageActivity>
+      <ActivityActualDateTime TimeZoneCode="???">2012-12-13T12:12:12</ActivityActualDateTime>
+      <ActivityDescriptionText>str1234</ActivityDescriptionText>
+      <ActivityEarliestDateTime TimeZoneCode="???">2012-12-13T12:12:12</ActivityEarliestDateTime>
+      <ActivityLatestDateTime TimeZoneCode="???">2012-12-13T12:12:12</ActivityLatestDateTime>
+      <ActivitySecondaryCode ListAgencyID="???" ListAgencyName="str1234" ListSchemeURI="http://www.xsd2xml.com" ListURI="http://www.xsd2xml.com" ListVersionID="???" ListID="???" ListName="str1234" Name="str1234">???</ActivitySecondaryCode>
+      <ActivitySequenceOrdinal>1234</ActivitySequenceOrdinal>
+      <BaggageActivityCode ListAgencyID="???" ListAgencyName="str1234" ListSchemeURI="http://www.xsd2xml.com" ListURI="http://www.xsd2xml.com" ListVersionID="???" ListID="???" ListName="str1234" Name="str1234">str1234</BaggageActivityCode>
+      <AgentOperator>
+        <AgentCode ListAgencyID="???" ListAgencyName="str1234" ListSchemeURI="http://www.xsd2xml.com" ListURI="http://www.xsd2xml.com" ListVersionID="???" ListID="???" ListName="str1234" Name="str1234">str1234</AgentCode>
+        <AirlineCode ListAgencyID="???" ListAgencyName="str1234" ListSchemeURI="http://www.xsd2xml.com" ListURI="http://www.xsd2xml.com" ListVersionID="???" ListID="???" ListName="str1234" Name="str1234">str1234</AirlineCode>
+        <AirportCode ListAgencyID="???" ListAgencyName="str1234" ListSchemeURI="http://www.xsd2xml.com" ListURI="http://www.xsd2xml.com" ListVersionID="???" ListID="???" ListName="str1234" Name="str1234">???</AirportCode>
+        <AllianceCode ListAgencyID="???" ListAgencyName="str1234" ListSchemeURI="http://www.xsd2xml.com" ListURI="http://www.xsd2xml.com" ListVersionID="???" ListID="???" ListName="str1234" Name="str1234">str1234</AllianceCode>
+      </AgentOperator>
+      <AirlineOperator>
+        <AgentCode ListAgencyID="???" ListAgencyName="str1234" ListSchemeURI="http://www.xsd2xml.com" ListURI="http://www.xsd2xml.com" ListVersionID="???" ListID="???" ListName="str1234" Name="str1234">str1234</AgentCode>
+        <AirlineCode ListAgencyID="???" ListAgencyName="str1234" ListSchemeURI="http://www.xsd2xml.com" ListURI="http://www.xsd2xml.com" ListVersionID="???" ListID="???" ListName="str1234" Name="str1234">str1234</AirlineCode>
+        <AirportCode ListAgencyID="???" ListAgencyName="str1234" ListSchemeURI="http://www.xsd2xml.com" ListURI="http://www.xsd2xml.com" ListVersionID="???" ListID="???" ListName="str1234" Name="str1234">???</AirportCode>
+        <AllianceCode ListAgencyID="???" ListAgencyName="str1234" ListSchemeURI="http://www.xsd2xml.com" ListURI="http://www.xsd2xml.com" ListVersionID="???" ListID="???" ListName="str1234" Name="str1234">str1234</AllianceCode>
+      </AirlineOperator>
+      <BagStatus>
+        <ItemAuthenticationStatusCode ListAgencyID="???" ListAgencyName="str1234" ListSchemeURI="http://www.xsd2xml.com" ListURI="http://www.xsd2xml.com" ListVersionID="???" ListID="???" ListName="str1234" Name="str1234">str1234</ItemAuthenticationStatusCode>
+        <ItemContainerisationStatusCode ListAgencyID="???" ListAgencyName="str1234" ListSchemeURI="http://www.xsd2xml.com" ListURI="http://www.xsd2xml.com" ListVersionID="???" ListID="???" ListName="str1234" Name="str1234">str1234</ItemContainerisationStatusCode>
+        <ItemMovementStatusCode ListAgencyID="???" ListAgencyName="str1234" ListSchemeURI="http://www.xsd2xml.com" ListURI="http://www.xsd2xml.com" ListVersionID="???" ListID="???" ListName="str1234" Name="str1234">str1234</ItemMovementStatusCode>
+        <ItemScreeningResultStatusCode ListAgencyID="???" ListAgencyName="str1234" ListSchemeURI="http://www.xsd2xml.com" ListURI="http://www.xsd2xml.com" ListVersionID="???" ListID="???" ListName="str1234" Name="str1234">str1234</ItemScreeningResultStatusCode>
+        <ItemSortationStatusCode ListAgencyID="???" ListAgencyName="str1234" ListSchemeURI="http://www.xsd2xml.com" ListURI="http://www.xsd2xml.com" ListVersionID="???" ListID="???" ListName="str1234" Name="str1234">str1234</ItemSortationStatusCode>
+        <ItemStorageStatusCode ListAgencyID="???" ListAgencyName="str1234" ListSchemeURI="http://www.xsd2xml.com" ListURI="http://www.xsd2xml.com" ListVersionID="???" ListID="???" ListName="str1234" Name="str1234">str1234</ItemStorageStatusCode>
+      </BagStatus>
+      <BagProcess>
+        <BaggageProcessCode ListAgencyID="???" ListAgencyName="str1234" ListSchemeURI="http://www.xsd2xml.com" ListURI="http://www.xsd2xml.com" ListVersionID="???" ListID="???" ListName="str1234" Name="str1234">str1234</BaggageProcessCode>
+      </BagProcess>
+      <PassengerStatus>
+        <PassengerBoardingStatusCode ListAgencyID="???" ListAgencyName="str1234" ListSchemeURI="http://www.xsd2xml.com" ListURI="http://www.xsd2xml.com" ListVersionID="???" ListID="???" ListName="str1234" Name="str1234">str1234</PassengerBoardingStatusCode>
+        <PassengerSecurityProfileStatus>true</PassengerSecurityProfileStatus>
+      </PassengerStatus>
+      <Container>
+        <ContainerBaggageTypeCode ListAgencyID="???" ListAgencyName="str1234" ListSchemeURI="http://www.xsd2xml.com" ListURI="http://www.xsd2xml.com" ListVersionID="???" ListID="???" ListName="str1234" Name="str1234">str1234</ContainerBaggageTypeCode>
+        <ContainerID SchemeAgencyID="???" SchemeDataURI="http://www.xsd2xml.com" SchemeURI="http://www.xsd2xml.com" SchemeVersionID="???" SchemeID="???" SchemeName="str1234">???</ContainerID>
+        <ULDLabel>
+          <TagExpediteIndicator>true</TagExpediteIndicator>
+          <TagFallbackIndicator>true</TagFallbackIndicator>
+          <TagID SchemeAgencyID="???" SchemeDataURI="http://www.xsd2xml.com" SchemeURI="http://www.xsd2xml.com" SchemeVersionID="???" SchemeID="???" SchemeName="str1234">???</TagID>
+          <TagInterlineIndicator>true</TagInterlineIndicator>
+        </ULDLabel>
+      </Container>
+      <HandlingAirport>
+        <AircraftStandID SchemeAgencyID="???" SchemeDataURI="http://www.xsd2xml.com" SchemeURI="http://www.xsd2xml.com" SchemeVersionID="???" SchemeID="???" SchemeName="str1234">???</AircraftStandID>
+        <AirportCode ListAgencyID="???" ListAgencyName="str1234" ListSchemeURI="http://www.xsd2xml.com" ListURI="http://www.xsd2xml.com" ListVersionID="???" ListID="???" ListName="str1234" Name="str1234">str1234</AirportCode>
+        <HandlingBayID SchemeAgencyID="???" SchemeDataURI="http://www.xsd2xml.com" SchemeURI="http://www.xsd2xml.com" SchemeVersionID="???" SchemeID="???" SchemeName="str1234">???</HandlingBayID>
+        <TerminalCheckInIdentfier SchemeAgencyID="???" SchemeDataURI="http://www.xsd2xml.com" SchemeURI="http://www.xsd2xml.com" SchemeVersionID="???" SchemeID="???" SchemeName="str1234">???</TerminalCheckInIdentfier>
+        <TerminalClaimID SchemeAgencyID="???" SchemeDataURI="http://www.xsd2xml.com" SchemeURI="http://www.xsd2xml.com" SchemeVersionID="???" SchemeID="???" SchemeName="str1234">???</TerminalClaimID>
+        <TerminalGateID SchemeAgencyID="???" SchemeDataURI="http://www.xsd2xml.com" SchemeURI="http://www.xsd2xml.com" SchemeVersionID="???" SchemeID="???" SchemeName="str1234">???</TerminalGateID>
+        <TerminalID SchemeAgencyID="???" SchemeDataURI="http://www.xsd2xml.com" SchemeURI="http://www.xsd2xml.com" SchemeVersionID="???" SchemeID="???" SchemeName="str1234">???</TerminalID>
+        <TerminalPierID SchemeAgencyID="???" SchemeDataURI="http://www.xsd2xml.com" SchemeURI="http://www.xsd2xml.com" SchemeVersionID="???" SchemeID="???" SchemeName="str1234">???</TerminalPierID>
+        <TerminalSatelightID SchemeAgencyID="???" SchemeDataURI="http://www.xsd2xml.com" SchemeURI="http://www.xsd2xml.com" SchemeVersionID="???" SchemeID="???" SchemeName="str1234">???</TerminalSatelightID>
+      </HandlingAirport>
+      <InvokedFunction>
+        <BaggageFunctionCode ListAgencyID="???" ListAgencyName="str1234" ListSchemeURI="http://www.xsd2xml.com" ListURI="http://www.xsd2xml.com" ListVersionID="???" ListID="???" ListName="str1234" Name="str1234">str1234</BaggageFunctionCode>
+        <MessageAcknowledgementRequest>true</MessageAcknowledgementRequest>
+        <MessageEncription SchemeAgencyID="???" SchemeDataURI="http://www.xsd2xml.com" SchemeURI="http://www.xsd2xml.com" SchemeVersionID="???" SchemeID="???" SchemeName="str1234">???</MessageEncription>
+        <MessagePartNumber SchemeAgencyID="???" SchemeDataURI="http://www.xsd2xml.com" SchemeURI="http://www.xsd2xml.com" SchemeVersionID="???" SchemeID="???" SchemeName="str1234">???</MessagePartNumber>
+        <MessageReference SchemeAgencyID="???" SchemeDataURI="http://www.xsd2xml.com" SchemeURI="http://www.xsd2xml.com" SchemeVersionID="???" SchemeID="???" SchemeName="str1234">???</MessageReference>
+        <ScreeningMethodCode ListAgencyID="???" ListAgencyName="str1234" ListSchemeURI="http://www.xsd2xml.com" ListURI="http://www.xsd2xml.com" ListVersionID="???" ListID="???" ListName="str1234" Name="str1234">str1234</ScreeningMethodCode>
+      </InvokedFunction>
+    </BaggageActivity>
+  </Bag>
+</BagEventPublishMessageNotif>

@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>aero.sita</groupId>
+	<artifactId>DataServices</artifactId>
+	<version>1.0.0</version>
+	<inceptionYear>09/06/2016</inceptionYear>
+	<name>DataServices</name>
+	<url></url>
+	<description>ae</description>
+	<licenses>
+		<license>
+			<name>Sita</name>
+			<url> </url>
+			<distribution></distribution>
+		</license>
+	</licenses>
+	<developers>
+		<developer>
+			<id>1</id>
+			<name>Cyrille Eloundou</name>
+			<email>cyrille.aloundou@sita.aero </email>
+		</developer>
+	</developers>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<java.version>1.8</java.version>
+		<vertx.version>3.3.2</vertx.version>
+		<kafka.version>0.8.2.2</kafka.version>
+		<guava.version>18.0</guava.version>
+		<metrics-core.version>2.2.0</metrics-core.version>
+		<metrics-graphite.version>2.2.0</metrics-graphite.version>
+		<java-statsd-client.version>3.0.1</java-statsd-client.version>
+
+		<!--Plugin versions -->
+		<maven.compiler.plugin.version>3.1</maven.compiler.plugin.version>
+		<maven.resources.plugin.version>2.6</maven.resources.plugin.version>
+		<maven.clean.plugin.version>2.5</maven.clean.plugin.version>
+		<maven.vertx.plugin.version>2.0.11-final</maven.vertx.plugin.version>
+		<maven.surefire.plugin.version>2.14</maven.surefire.plugin.version>
+		<maven.failsafe.plugin.version>2.14</maven.failsafe.plugin.version>
+		<maven.surefire.report.plugin.version>2.14</maven.surefire.report.plugin.version>
+		<maven.dependency.plugin.version>2.7</maven.dependency.plugin.version>
+		<maven.source.plugin.version>2.1.2</maven.source.plugin.version>
+		<maven.javadoc.plugin.version>2.9</maven.javadoc.plugin.version>
+		<apache.camel.version>2.17.2</apache.camel.version>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.apache.httpcomponents</groupId>
+			<artifactId>httpclient</artifactId>
+			<version>4.0-alpha4</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>aero.sita.baggage</groupId>
+			<artifactId>baggage-bimparser</artifactId>
+			<version>1.12.0.14-SNAPSHOT</version>
+		</dependency>
+		<!-- vert.x dependencies -->
+		<dependency>
+			<groupId>io.vertx</groupId>
+			<artifactId>vertx-camel-bridge</artifactId>
+			<version>${vertx.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>io.vertx</groupId>
+			<artifactId>vertx-codegen</artifactId>
+			<version>${vertx.version}</version>
+			<scope>provided</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>io.vertx</groupId>
+			<artifactId>vertx-hazelcast</artifactId>
+			<version>${vertx.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>io.vertx</groupId>
+			<artifactId>vertx-service-factory</artifactId>
+			<version>${vertx.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>io.vertx</groupId>
+			<artifactId>vertx-service-proxy</artifactId>
+			<version>${vertx.version}</version>
+		</dependency>
+		<!-- end of vert.x dependencies -->
+
+		<dependency>
+			<groupId>com.yammer.metrics</groupId>
+			<artifactId>metrics-core</artifactId>
+			<version>${metrics-core.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.yammer.metrics</groupId>
+			<artifactId>metrics-graphite</artifactId>
+			<version>${metrics-graphite.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.timgroup</groupId>
+			<artifactId>java-statsd-client</artifactId>
+			<version>${java-statsd-client.version}</version>
+		</dependency>
+
+		<!-- General Libraries -->
+		<dependency>
+			<groupId>com.google.guava</groupId>
+			<artifactId>guava</artifactId>
+			<version>${guava.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>1.7.21</version>
+		</dependency>
+
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.17</version>
+		</dependency>
+
+		<!-- Camel components we use -->
+		<dependency>
+			<groupId>org.apache.camel</groupId>
+			<artifactId>camel-rss</artifactId>
+			<version>${apache.camel.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.camel</groupId>
+			<artifactId>camel-rmi</artifactId>
+			<version>${apache.camel.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.camel</groupId>
+			<artifactId>camel-stream</artifactId>
+			<version>${apache.camel.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.camel</groupId>
+			<artifactId>camel-spring</artifactId>
+			<version>${apache.camel.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.camel</groupId>
+			<artifactId>camel-kafka</artifactId>
+			<version>${apache.camel.version}</version>
+		</dependency>
+
+		<!-- jaxb -->
+		<dependency>
+		  <groupId>org.apache.camel</groupId>
+		  <artifactId>camel-jaxb</artifactId>
+		  <version>2.17.2</version>
+		</dependency>
+	
+		<!-- json -->	
+		<dependency>
+		  <groupId>org.apache.camel</groupId>
+		  <artifactId>camel-jackson</artifactId>
+		  <version>${apache.camel.version}</version>
+		</dependency>
+		
+		<dependency>
+		  <groupId>org.apache.camel</groupId>
+		  <artifactId>camel-xstream</artifactId>
+		  <version>${apache.camel.version}</version>
+		</dependency>
+		
+<!-- 	    <dependency>
+	      <groupId>com.github.oscerd</groupId>
+	      <artifactId>camel-cassandra</artifactId>
+	      <version>2.17.0</version>
+	    </dependency> -->
+	
+	
+	
+	
+	    
+		<dependency>
+		  <groupId>com.datastax.cassandra</groupId>
+		  <artifactId>cassandra-driver-core</artifactId>
+		  <version>3.1.0</version>
+		</dependency>	    
+
+		<dependency>
+		  <groupId>com.datastax.cassandra</groupId>
+		  <artifactId>cassandra-driver-extras</artifactId>
+		  <version>3.1.0</version>
+		</dependency>
+		
+		<dependency>
+		<groupId>com.datastax.cassandra</groupId>
+		<artifactId>cassandra-driver-mapping</artifactId>
+		<version>3.1.0</version>
+		</dependency>
+
+<dependency>
+    <groupId>joda-time</groupId>
+    <artifactId>joda-time</artifactId>
+    <version>2.8.1</version>
+</dependency>
+	
+<!-- 	<dependency>
+  <groupId>com.datastax.cassandra</groupId>
+  <artifactId>cassandra-driver-mapping</artifactId>
+  <version>3.1.0</version>
+</dependency>    --> 
+
+<!-- <dependency>
+    <groupId>com.datastax.cassandra</groupId>
+    <artifactId>cassandra-driver-parent</artifactId>
+    <version>3.1.1</version>
+</dependency>
+ -->
+		<!-- activemq -->
+		<dependency>
+			<groupId>org.apache.camel</groupId>
+			<artifactId>camel-jms</artifactId>
+			<version>${apache.camel.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.activemq</groupId>
+			<artifactId>activemq-camel</artifactId>
+			<version>5.6.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.activemq</groupId>
+			<artifactId>activemq-pool</artifactId>
+			<version>5.11.1</version>
+		</dependency>
+
+		<!-- mqtt -->
+		<dependency>
+			<groupId>org.apache.camel</groupId>
+			<artifactId>camel-mqtt</artifactId>
+			<version>${apache.camel.version}</version>
+		</dependency>
+			
+	<!--  spring data cassandra (THIS VERSION DOESN'T WORK WITH CASSANDRA 3 -->
+<!-- 	   <dependency>
+            <groupId>org.springframework.data</groupId>
+            <artifactId>spring-data-cassandra</artifactId>
+            <version>1.4.4.RELEASE</version>
+        </dependency>	 -->
+		<!-- xml -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.12</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>javax.xml.bind</groupId>
+			<artifactId>jaxb-api</artifactId>
+			<version>2.2.12</version>
+		</dependency>
+		<dependency>
+			<groupId>javax.xml</groupId>
+			<artifactId>jaxb-impl</artifactId>
+			<version>2.1</version>
+		</dependency>		
+		
+	</dependencies>
+
+	<build>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<artifactId>maven-compiler-plugin</artifactId>
+					<version>3.1</version>
+					<configuration>
+						<source>1.8</source>
+						<target>1.8</target>
+					</configuration>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+
+		<plugins>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>${maven.compiler.plugin.version}</version>
+				<configuration>
+					<source>${java.version}</source>
+					<target>${java.version}</target>
+				</configuration>
+				<executions>
+					<execution>
+						<id>default-compile</id>
+						<configuration>
+							<annotationProcessors>
+								<annotationProcessor>io.vertx.codegen.CodeGenProcessor</annotationProcessor>
+							</annotationProcessors>
+							<compilerArgs>
+								<arg>-AoutputDirectory=${project.basedir}/src/main</arg>
+							</compilerArgs>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+
+			<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-jar-plugin</artifactId>
+					<configuration>
+							<archive>
+								<manifest>
+									<mainClass>org.apache.camel.CamelContext.DataServicesMain</mainClass>
+								</manifest>
+							</archive>
+					</configuration>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-shade-plugin</artifactId>
+				<version>2.3</version>
+				<executions>
+					<!-- Run shade goal on package phase -->
+					<execution>
+						<phase>package</phase>
+						<goals>
+							<goal>shade</goal>
+						</goals>
+						<configuration>
+							<createDependencyReducedPom>false</createDependencyReducedPom>
+							<transformers>
+								<transformer
+									implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+									<manifestEntries>
+										<Main-Class>io.vertx.core.Launcher</Main-Class>
+									</manifestEntries>
+								</transformer>
+								<transformer
+									implementation="org.apache.maven.plugins.shade.resource.AppendingTransformer">
+									<resource>META-INF/spring.schemas</resource>
+								</transformer>
+								<transformer
+									implementation="org.apache.maven.plugins.shade.resource.AppendingTransformer">
+									<resource>META-INF/spring.handlers</resource>
+								</transformer>
+								<transformer
+									implementation="org.apache.maven.plugins.shade.resource.AppendingTransformer">
+									<resource>META-INF/services/io.vertx.core.spi.VerticleFactory</resource>
+								</transformer>
+							</transformers>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+			
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>jaxb2-maven-plugin</artifactId>
+				<version>2.1</version>
+				<executions>
+					<execution>
+						<id>xjc</id>
+						<goals>
+							<goal>xjc</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<sources>
+						<source>${basedir}/src/main/resources/BagPublishNotif.xsd</source>
+					</sources>
+					<packageName>${project.groupId}.generated</packageName>
+				</configuration>
+			</plugin>			
+		</plugins>
+	</build>
+
+	<profiles>
+		<profile>
+			<id>staging</id>
+			<repositories>
+				<repository>
+					<id>staging</id>
+					<url>https://oss.sonatype.org/content/repositories/iovertx-2993</url>
+				</repository>
+			</repositories>
+		</profile>
+	</profiles>
+</project>

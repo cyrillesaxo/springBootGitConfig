@@ -1,0 +1,6 @@
+{
+    "main": "aero.sita.kafka.producer.KafkaProducerServiceVerticle",
+    "options": {
+        "worker": true
+    }
+}

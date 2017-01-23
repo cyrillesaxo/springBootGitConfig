@@ -1,0 +1,49 @@
+= Cheatsheets
+
+[[ByteKafkaMessage]]
+== ByteKafkaMessage
+
+++++
+ @author Cyrille Eloundou
+++++
+'''
+
+[cols=">25%,^25%,50%"]
+[frame="topbot"]
+|===
+^|Name | Type ^| Description
+|[[partKey]]`partKey`|`String`|-
+|[[payload]]`payload`|`Buffer`|-
+|===
+
+[[KafkaOptions]]
+== KafkaOptions
+
+++++
+ @author Cyrille Eloundou
+++++
+'''
+
+[cols=">25%,^25%,50%"]
+[frame="topbot"]
+|===
+^|Name | Type ^| Description
+|[[topic]]`topic`|`String`|-
+|===
+
+[[StringKafkaMessage]]
+== StringKafkaMessage
+
+++++
+ @author Cyrille Eloundou
+++++
+'''
+
+[cols=">25%,^25%,50%"]
+[frame="topbot"]
+|===
+^|Name | Type ^| Description
+|[[partKey]]`partKey`|`String`|-
+|[[payload]]`payload`|`String`|-
+|===
+
